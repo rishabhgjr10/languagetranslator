@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Live Language translator</title>
+</head>
+<body>
+    <div id="main">
+        <div id="main-top">
+            <div id="top-left">
+                <select>
+                    
+                </select>
+            </div>
+            <div id="top-center">
+                <i class="ri-arrow-left-right-line"></i>
+            </div>
+            <div id="top-right">
+                <select>
+                    
+                </select>
+            </div>
+        </div>
+        <div id="main-bottom">
+            <div id="bottom-left">
+                <div class="icon" id="bottom-left-icon">
+                    <i id="left-speaker" class="ri-volume-up-line"></i>
+                    <span id="count">0/5000</span>
+                </div>
+                <textarea placeholder="Write Down.." maxlength="5000" class="fromText"></textarea>
+            </div>
+            <div id="bottom-right">
+                <div class="icon" id="bottom-right-icon">
+                    <i id="right-speaker" class="ri-volume-up-line"></i>
+                    <i class="ri-file-copy-line"></i>
+                </div>    
+                <textarea class="toTranslate" disabled></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="language.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
